@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Rules</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="shortcut icon" href=http://www.freshdesignweb.com/wp-content/themes/fv28/images/icon.ico />
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/game_rules.css')}}">
+</head>
+<body>
+<div id="container">
+				
+			<header>
+				<h1><strong>Game Rules</a></strong></h1>
+      </header>
+<div class="freshdesignweb">    
+
+<div class="numberlist">
+ <ol>
+  <li><a> 1.No time limit to guess the number.</a></li><br>
+  <li><a> 2.If you cannot guess the number you will get hints after entering wrong number.</a></li><br>
+  <li><a> 3.If you follow the hints you will get quick answer.</a></li><br>
+  <li><a> 4.Guess the number in given range(1-20).</a></li><br>
+  <li><a> 5.Follow the instructions to go forward in the game.</a></li><br>
+
+
+
+ </ol>
+</div>
+</div>
+<div id="container2">
+      <a href="{{url_for('userDetailsPage')}}"><button id="button" class="button">Next</button></a>
+      
+</div>
+
+</div>
+
+
+
+
+            
+           
+<script type="text/javascript">
+var get_height = window.innerHeight; 
+var get_height1 =  get_height - 0;
+var get_container = document.getElementById('container');
+get_container.style.height =  get_height1 + 'px';
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(["_setAccount", "UA-10146041-18"]);
+  _gaq.push(["_trackPageview"]);
+
+  (function() {
+    var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+    ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+    var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

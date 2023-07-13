@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Start Game</title>
+    <link rel="stylesheet" type="text/css" href="https://demo.plantpot.works/assets/css/normalize.css">
+    <link rel="stylesheet" href="https://use.typekit.net/opg3wle.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/start_game_style.CSS') }}">
+  </head>
+  <body>
+  	<h1>Welcome To TSWR Coding Academy</h1>
+
+    <div id="container">
+      <a href="{{url_for('gameRulesPage')}}"><button id="button" class="button">Start Game</button></a>
+      
+    </div>
+
+    <!-- <script>
+    	var root = document.documentElement;
+document.getElementById("button").onclick = function(ev) {
+  var el = ev.target;
+  var x = (ev.clientX - el.offsetLeft) / el.offsetWidth;
+  var y = (ev.clientY - el.offsetTop) / el.offsetHeight;
+    root.style.setProperty('--ripple-x', x);
+    root.style.setProperty('--ripple-y', y);
+}
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Guess Number</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/guess_number_style.css')}}">
+   </head>
+   <body>
+    <form action="" method="post">
+    <div id="container">
+      
+      <header>
+        <h1><strong>Guess Number</a></strong></h1>
+      </header>
+      <div class="container" style="width:350px;">
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <div class="alert alert-success">
+                <hr class="message-inner-separator">
+                <p style="color: white;text-align: center;">
+                    {% with messages=get_flashed_messages()%}
+                        {% if messages %}
+                            {% for message in messages %}
+                              HINT : {{message}}.
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="wrapper" style="margin-top: 1%;">
+          <div class="input-data">
+            <input type="text" name = "number" required>
+            <div class="underline"></div>
+            <label>Enter Number(Range of 1 to 20):</label>
+          </div>
+      </div><br>
+      <div id="container2">
+          <button id="button" class="button">Submit</button>
+      
+      </div>
+    </div>
+    </form>
+   </body>
+</html>
